@@ -1,0 +1,168 @@
+.panel {
+  background: #fff;
+  border: 0.5px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.sectionLabel {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--gray-400);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* ── Gauge ── */
+.gaugeWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem 0 0.75rem;
+}
+
+.gaugeSvg {
+  display: block;
+}
+
+.gaugeScore {
+  font-family: var(--font-display);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: -6px;
+  transition: color 0.4s ease;
+}
+
+.gaugeUnit {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.riskBadge {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 5px 16px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.riskSub {
+  font-weight: 400;
+  font-size: 11.5px;
+  opacity: 0.75;
+}
+
+/* ── Divider ── */
+.divider {
+  height: 0.5px;
+  background: var(--gray-200);
+  margin: 1.25rem 0;
+}
+
+/* ── Feature bars ── */
+.bars {}
+
+.barRow {
+  margin-bottom: 9px;
+}
+
+.barMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11.5px;
+  margin-bottom: 4px;
+}
+
+.barLabel {
+  color: var(--gray-600);
+}
+
+.barPct {
+  color: var(--gray-700);
+  font-weight: 500;
+  font-family: var(--font-mono);
+}
+
+.barTrack {
+  height: 5px;
+  background: var(--gray-100);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.barLegend {
+  display: flex;
+  gap: 16px;
+  margin-top: 10px;
+  font-size: 10.5px;
+  color: var(--gray-400);
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* ── Interpretation ── */
+.interp {
+  border-radius: var(--radius-md);
+  border: 0.5px solid;
+  padding: 1rem 1.1rem;
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+.verifiedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(34,197,94,0.12);
+  border: 0.5px solid rgba(34,197,94,0.35);
+  border-radius: 99px;
+  font-size: 10.5px;
+  color: #14532d;
+  font-weight: 600;
+  padding: 3px 10px;
+  margin-bottom: 8px;
+}
+
+.interpHeadline {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 6px;
+  transition: color 0.4s ease;
+}
+
+.interpBody {
+  font-size: 12.5px;
+  line-height: 1.65;
+  margin-bottom: 8px;
+  transition: color 0.4s ease;
+}
+
+.interpAction {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: italic;
+  transition: color 0.4s ease;
+}
